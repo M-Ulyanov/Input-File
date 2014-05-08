@@ -103,3 +103,13 @@ body{
 .flst2 > .file-name{
 	line-height: 30px;
 }
+.delFile{
+	font-size: 24px;
+	color: red;
+	cursor: pointer;
+	position: relative;
+	top: 16px;
+	float: right;
+	margin-right: 5px;
+	line-height: 0;
+}

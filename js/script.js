@@ -6,7 +6,8 @@ $(function(){
         var fileWrap = $(this).parent('.file-wrap'),
         inputFile  = fileWrap.find('input[type="file"]'),
         button = fileWrap.find('button.file-button'),
-        divTxt  = fileWrap.find('div.file-name');
+        divTxt  = fileWrap.find('div.file-name'),
+        deleteFile = $('<span class="delFile">&#215;</a>');
 
         // Имититация клика по inputFile
         inputFile.click();
@@ -35,10 +36,19 @@ $(function(){
 
             // Изменяем поле с именем файла и текст на кнопки
             divTxt.addClass('select-file').text(fileName);
-            button.text('Изменить');
+            button.text('Выбрать');
+            
+            $(this).parent().append(deleteFile);
 
         }).change();
 
+
+        $(deleteFile).on('click', function(){
+            var t = $(this).parent().find('input[type="file"]');
+            $(t).replaceWith($(t).clone());
+            $(this).parent().find(divTxt).removeClass('select-file').text('Файл не выбран');
+            $(this).remove();
+        });
 
     });
 
