@@ -64,11 +64,42 @@ body{
 	box-shadow: 0 1px 0 #55636F;
 }
 .file-wrap > .file-name{
-	
+	line-height: 25px;
+	margin-left: 10px;
+	float: left;
+	font-size: 12px;
 }
 .file-wrap > .select-file{
 	color:green;
 }
 .file-wrap input[type=file]{
     display: none;
+}
+
+/*Version 2*/
+.flst2{
+	-moz-border-radius: 0px 5px 5px 0;
+	-webkit-border-radius: 0px 5px 5px 0;
+	border-radius: 0px 5px 5px 0;
+	padding: 0;
+}
+
+.flst2 .file-button{
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 7px;
+	border-top: none;
+	box-shadow: none;
+}
+.flst2 .file-button:hover{
+	border-top: none;
+	box-shadow: none;
+}
+.flst2 .file-button:active{
+	top:0;
+}
+
+.flst2 > .file-name{
+	line-height: 30px;
 }

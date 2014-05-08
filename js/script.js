@@ -35,7 +35,7 @@ $(function(){
 
             // Изменяем поле с именем файла и текст на кнопки
             divTxt.addClass('select-file').text(fileName);
-            button.text('Выбрать');
+            button.text('Изменить');
 
         }).change();
 
