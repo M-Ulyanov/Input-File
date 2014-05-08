@@ -1,0 +1,26 @@
+/*Reset*/
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+input,select,option, img{
+	outline:0;
+	border:0;
+}
+a{
+    text-decoration: none;
+}
+
+/*General*/
+body{
+    font: Arial, sans-serif;
+}
+.file-wrap input[type=file]{
+    display: none;
+}
