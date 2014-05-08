@@ -5,8 +5,8 @@ $(function(){
         // Определение переменных
         var fileWrap = $(this).parent('.file-wrap'),
         inputFile  = fileWrap.find('input[type="file"]'),
-        button = fileWrap.find('button'),
-        divTxt  = fileWrap.find('div');
+        button = fileWrap.find('button.file-button'),
+        divTxt  = fileWrap.find('div.file-name');
 
         // Имититация клика по inputFile
         inputFile.click();
@@ -34,7 +34,7 @@ $(function(){
             }
 
             // Изменяем поле с именем файла и текст на кнопки
-            divTxt.text(fileName);
+            divTxt.addClass('select-file').text(fileName);
             button.text('Выбрать');
 
         }).change();
