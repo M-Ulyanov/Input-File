@@ -38,7 +38,9 @@ $(function(){
             divTxt.addClass('select-file').text(fileName);
             button.text('Выбрать');
             
-            $(this).parent().append(deleteFile);
+            if(document.addEventListener){
+                $(this).parent().append(deleteFile);
+            }
 
         }).change();
 
